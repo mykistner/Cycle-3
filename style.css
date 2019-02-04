@@ -46,7 +46,7 @@ body{
   background-color: lightgrey;
 }
 .number, .operator{
- cursor: pointer;
+ cursor: pointer; /* gives all number and operator buttons the ability to be clicked */
 }
 
 button:nth-child(4){

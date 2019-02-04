@@ -68,23 +68,23 @@
       var operator = clickObj.target.innerText;
 
       switch(operator){
-        case "/":
-          inputVal=inputVal+"/";
+        case '/':
+          inputVal=inputVal+'/';
           inputDisplay.innerText=inputVal;
           evalArray.push('/');
         break;
-        case "*":
-          inputVal=inputVal+"*";
+        case '*':
+          inputVal=inputVal+'*';
           inputDisplay.innerText=inputVal;
           evalArray.push('*');
         break;
-        case "-":
-          inputVal=inputVal+"-";
+        case '-':
+          inputVal=inputVal+'-';
           inputDisplay.innerText=inputVal;
           evalArray.push('-');
         break;
-        case "+":
-          inputVal=inputVal+"+";
+        case '+':
+          inputVal=inputVal+'+';
           inputDisplay.innerText=inputVal;
           evalArray.push('+');
           break;
@@ -92,7 +92,7 @@
         //the final calculation then clears the array with pushed values
         case "=":
           tempVal=inputVal;
-          var temp=eval(evalArray.join(' '));
+          var temp=eval(evalArray.join(''));
           outputDisplay.innerText=temp;
           evalArray=[];
           break;
